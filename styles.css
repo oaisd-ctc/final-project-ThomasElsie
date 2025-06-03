@@ -6,7 +6,7 @@ body {
 
 @font-face {
     font-family: 'zelda-script';
-    src: url('./resources/fonts/thewildbreathofzelda.otf')
+    src: url('./resources/fonts/Cal_Sans/CalSans-Regular.ttf')
 }
 
 header {
@@ -19,6 +19,10 @@ header {
     grid-template-rows: 100px;
     grid-gap: 10px;
     align-items: center;
+}
+
+header>div {
+    flex: 1;
 }
 
 #logo {
@@ -64,7 +68,7 @@ nav>div>a {
 }
 
 nav>div>a:hover {
-    background-color: #4aba91;
+    background-color: #f1d1b5;
     transition: 300ms;
     border-radius: 5px;
 }
@@ -91,7 +95,7 @@ main {
 }
 
 .section0>div>h2 {
-    color: #0e5135;
+    color: #305f72;
 }
 
 .section {
@@ -102,22 +106,28 @@ main {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+
 }
 
 .section>div>h2 {
-    color: #0e5135;
+    color: #305f72;
+}
+
+.section1>div>h2 {
+    color: #305f72;
 }
 
 .section>div {
-    max-width: 850px;
+    max-width: 80%;
 }
 
 .times {
-    background-color: #4aba91;
+    background-color: #568ea6;
     border-radius: 5px;
     text-align: center;
     max-width: 850px;
     padding: 5px;
+
 }
 
 h3 {
@@ -126,7 +136,7 @@ h3 {
 }
 
 .times:hover {
-    background-color: #0e5135;
+    background-color: #305f72;
     color: #f4f4f4;
     transition: 300ms;
 }
@@ -142,7 +152,7 @@ h3 {
 }
 
 #fixtext>h2 {
-    color: #0e5135;
+    color: #305f72;
     max-width: 850px;
 }
 
@@ -154,19 +164,23 @@ h3 {
 }
 
 .games {
-    background-color: #4aba91;
+    background-color: #f0b7a4;
     border-radius: 5px;
     text-align: center;
-    height: 450px;
+    height: 500px;
     margin: 10px;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
+    width: 200px;
+    padding: 10px;
 }
 
-.iconic:hover {
-    background-color: #0e5135;
+.gamedesc {}
+
+.games:hover {
+    background-color: #f18c8e;
     color: #f4f4f4;
     transition: 300ms;
 }
@@ -177,10 +191,13 @@ h3 {
 
 #pic {
     border-radius: 5px;
-    width: 85%;
-    height: 20vh;
+    height: 22vh;
     border: white solid 2px;
     object-fit: cover;
+}
+
+#about {
+    width: 64%;
 }
 
 footer {
@@ -198,25 +215,27 @@ footer {
         flex-direction: column;
         display: flex;
     }
+
     #logo {
         align-items: center;
         padding: 0px;
         justify-content: center;
         padding-top: 15px;
     }
+
     nav {
         padding-bottom: 12px;
     }
+
     .iconic {
         max-width: 45%;
         min-width: 250px;
     }
-    .section0>div {
-        margin: 0px 10px;
-    }
+
     .section>div {
         margin: 0px 10px;
     }
+
     #textup {
         margin: 0px 10px;
         flex-wrap: wrap;
@@ -230,12 +249,14 @@ footer {
         flex-direction: column;
         display: flex;
     }
+
     #logo {
         align-items: center;
         padding: 0px;
         justify-content: center;
         padding-top: 15px;
     }
+
     nav {
         padding-bottom: 12px;
         flex-direction: column;
